@@ -13,5 +13,10 @@ public class JenkinsDemoController {
 	public String getUserDetails(@RequestParam("name") String name) {
 		return "Hi "+name+" Jenkins CI&CD Demo says Welcome To You!";
 	}
+	
+	@GetMapping("/test")
+	public String test(@RequestParam("name") String name) {
+		return "Hi "+name+" Jenkins CI&CD Testing!";
+	}
 
 }
